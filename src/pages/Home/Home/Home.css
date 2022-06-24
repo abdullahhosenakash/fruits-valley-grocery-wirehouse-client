@@ -1,0 +1,9 @@
+.custom-button-width {
+    width: 25%;
+}
+
+@media only screen and (max-width: 992px) {
+    .custom-button-width {
+        width: 70%;
+    }
+}
