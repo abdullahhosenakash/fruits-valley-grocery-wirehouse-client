@@ -1,0 +1,17 @@
+.update-details {
+    width: 40%;
+}
+
+.delivered-button {
+    width: 25%;
+}
+
+@media only screen and (max-width: 992px) {
+    .update-details {
+        width: 100%;
+    }
+
+    .delivered-button {
+        width: 50%;
+    }
+}

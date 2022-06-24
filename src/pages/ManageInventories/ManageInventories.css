@@ -1,0 +1,17 @@
+.inventories-table {
+    width: 90% !important;
+}
+
+.add-new-button {
+    width: 20%;
+}
+
+@media only screen and (max-width: 992px) {
+    .display-custom-sm-none {
+        display: none;
+    }
+
+    .add-new-button {
+        width: 40%;
+    }
+}

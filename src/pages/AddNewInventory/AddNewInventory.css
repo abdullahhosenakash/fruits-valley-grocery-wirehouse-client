@@ -1,0 +1,17 @@
+.add-new-inventory {
+    width: 50%;
+}
+
+@media only screen and (max-width: 992px) {
+    .add-new-inventory {
+        width: 90%;
+    }
+}
+
+/* trying to remove scroll bar from number input. won't work in firefox -_- */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
