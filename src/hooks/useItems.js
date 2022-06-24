@@ -6,7 +6,7 @@ const useItems = () => {
 
     useEffect(() => {
         setLoading(true);
-        fetch('https://gentle-depths-46092.herokuapp.com/services')
+        fetch('https://pure-atoll-61316.herokuapp.com/services')
             .then(res => res.json())
             .then(data => {
                 setItems(data);

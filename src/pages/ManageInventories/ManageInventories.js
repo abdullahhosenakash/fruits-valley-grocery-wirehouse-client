@@ -18,7 +18,7 @@ const ManageInventories = () => {
 
     useEffect(() => {
         setLoading(true);
-        fetch('https://gentle-depths-46092.herokuapp.com/services')
+        fetch('https://pure-atoll-61316.herokuapp.com/services')
             .then(res => res.json())
             .then(data => {
                 setAllItems(data);
@@ -29,7 +29,7 @@ const ManageInventories = () => {
     const handleDeleteButton = _id => {
         const proceed = window.confirm('Are you sure you want to delete?');
         if (proceed) {
-            const url = `https://gentle-depths-46092.herokuapp.com/services/${_id}`;
+            const url = `https://pure-atoll-61316.herokuapp.com/services/${_id}`;
             fetch(url, {
                 method: 'delete'
             })

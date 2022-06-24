@@ -13,7 +13,7 @@ const SignUp = () => {
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     const [passwordMatched, setPasswordMatched] = useState(false);
-    const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, , loading, error] = useCreateUserWithEmailAndPassword(auth);
     const [updateProfile] = useUpdateProfile(auth);
     const [sendEmailVerification] = useSendEmailVerification(auth);
 
@@ -29,7 +29,7 @@ const SignUp = () => {
             setPasswordMatched(true);
         }
     }
-    const from = location?.state?.from?.pathname || '/';
+    const from = location.state?.from?.pathname || '/';
 
     const handleCreateNewUser = (event) => {
         event.preventDefault();

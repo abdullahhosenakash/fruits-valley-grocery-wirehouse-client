@@ -18,7 +18,7 @@ const Update = () => {
     const [user] = useAuthState(auth);
     UserVerification(user);
 
-    const url = `https://gentle-depths-46092.herokuapp.com/services/${id}`;
+    const url = `https://pure-atoll-61316.herokuapp.com/services/${id}`;
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
