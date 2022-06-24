@@ -1,0 +1,8 @@
+.item-img {}
+
+@media only screen and (min-width: 992px) {
+    .card-width {
+        width: 30% !important;
+        margin: 20px 10px;
+    }
+}
