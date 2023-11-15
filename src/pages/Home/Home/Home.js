@@ -8,18 +8,23 @@ import Slider from '../Slider/Slider';
 import './Home.css';
 
 const Home = () => {
-    return (
-        <div>
-            <Slider></Slider>
-            <div className="container mt-5">
-                <Inventories all={false}></Inventories>
-                <Link className='btn btn-secondary my-3 custom-button-width d-block mx-auto' to='/manage-inventories'>Manage Inventories</Link>
-            </div>
-            <LearnMore></LearnMore>
-            <AdvancedFeatures></AdvancedFeatures>
-            <Footer></Footer>
-        </div >
-    );
+  return (
+    <div>
+      <Slider></Slider>
+      <div className='container mt-5'>
+        <Inventories all={false}></Inventories>
+        <Link
+          className='btn btn-secondary my-3 custom-button-width d-block mx-auto'
+          to='/manage-inventories'
+        >
+          Manage Inventories
+        </Link>
+      </div>
+      <LearnMore></LearnMore>
+      <AdvancedFeatures></AdvancedFeatures>
+      <Footer></Footer>
+    </div>
+  );
 };
 
 export default Home;

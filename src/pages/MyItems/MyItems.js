@@ -9,7 +9,7 @@ import PageTitle from '../shared/PageTitle/PageTitle';
 import Loading from '../shared/Loading/Loading';
 
 const MyItems = () => {
-  const [items, setItems, loading] = useItems();
+  const [items, , loading] = useItems();
   const [user] = useAuthState(auth);
   const [userStoredItems, setUserStoredItems] = useState([]);
   const [storedItems, setStoredItems] = useState([]);
@@ -48,10 +48,10 @@ const MyItems = () => {
   };
   return (
     <div>
-      <PageTitle title='My Items'></PageTitle>
+      <PageTitle title='My Items' />
       <div className='row justify-content-center mx-auto'>
         <h2 className='text-center display-6 mb-3 mt-3'>My Items</h2>
-        {loading && <Loading></Loading>}
+        {loading && <Loading />}
         {!loading && !itemAvailable && (
           <h3 className='display-4 text-center my-5 text-danger'>
             oops... You have no item!
@@ -62,7 +62,7 @@ const MyItems = () => {
             key={Math.random()}
             userItem={userItem}
             handleDeleteButton={handleDeleteButton}
-          ></MyItem>
+          />
         ))}
       </div>
     </div>
