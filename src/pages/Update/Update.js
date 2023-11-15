@@ -23,7 +23,7 @@ const Update = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setItem(data));
-  }, [updatedItem]);
+  }, [updatedItem, url]);
 
   const newQuantity = parseInt(quantity) - 1;
   const handleDeliveredButton = () => {
