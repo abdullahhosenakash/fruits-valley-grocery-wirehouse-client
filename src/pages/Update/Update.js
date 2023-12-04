@@ -18,7 +18,7 @@ const Update = () => {
   const [user] = useAuthState(auth);
   UserVerification(user);
 
-  const url = `https://fruits-valley-wirehouse-server.onrender.com/services/${id}`;
+  const url = `https://fruits-valley-wirehouse-server-djpdmk4e2.vercel.app/services/${id}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())

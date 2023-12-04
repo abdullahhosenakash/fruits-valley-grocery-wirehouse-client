@@ -6,7 +6,9 @@ const useItems = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch('https://fruits-valley-wirehouse-server.onrender.com/services')
+    fetch(
+      'https://fruits-valley-wirehouse-server-djpdmk4e2.vercel.app/services'
+    )
       .then((res) => res.json())
       .then((data) => {
         setItems(data);
