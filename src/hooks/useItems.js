@@ -6,14 +6,20 @@ const useItems = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(
-      'https://fruits-valley-wirehouse-server-b30buiedp.vercel.app/services'
-    )
-      .then((res) => res.json())
-      .then((data) => {
+    const dataFetch = async () => {
+      try {
+        const response = await fetch(
+          'https://fruits-valley-wirehouse-server.vercel.app/services'
+        );
+        const data = await response.json();
         setItems(data);
+      } catch (error) {
+        console.log(error);
+      } finally {
         setLoading(false);
-      });
+      }
+    };
+    dataFetch();
   }, []);
   return [items, setItems, loading];
 };
