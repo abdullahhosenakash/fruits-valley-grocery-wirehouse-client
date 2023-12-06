@@ -18,9 +18,7 @@ const ManageInventories = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(
-      'https://fruits-valley-wirehouse-server-b30buiedp.vercel.app/services'
-    )
+    fetch('https://fruits-valley-wirehouse-server.vercel.app/services')
       .then((res) => res.json())
       .then((data) => {
         setAllItems(data);
@@ -31,7 +29,7 @@ const ManageInventories = () => {
   const handleDeleteButton = (_id) => {
     const proceed = window.confirm('Are you sure you want to delete?');
     if (proceed) {
-      const url = `https://fruits-valley-wirehouse-server-b30buiedp.vercel.app/services/${_id}`;
+      const url = `https://fruits-valley-wirehouse-server.vercel.app/services/${_id}`;
       fetch(url, {
         method: 'delete'
       })

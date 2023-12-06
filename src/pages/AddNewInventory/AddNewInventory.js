@@ -10,7 +10,7 @@ import './AddNewInventory.css';
 const AddNewInventory = () => {
   const [user] = useAuthState(auth);
   UserVerification(user);
-  const url = `https://fruits-valley-wirehouse-server-b30buiedp.vercel.app/services`;
+  const url = `https://fruits-valley-wirehouse-server.vercel.app/services`;
 
   const handleAddButton = (event) => {
     event.preventDefault();

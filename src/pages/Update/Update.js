@@ -18,7 +18,7 @@ const Update = () => {
   const [user] = useAuthState(auth);
   UserVerification(user);
 
-  const url = `https://fruits-valley-wirehouse-server-b30buiedp.vercel.app/services/${id}`;
+  const url = `https://fruits-valley-wirehouse-server.vercel.app/services/${id}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
